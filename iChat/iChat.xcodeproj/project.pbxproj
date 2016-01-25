@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		489D9F96BC89FD3B89799119 /* Pods_iChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC1AD9D333AB43139749C1D /* Pods_iChat.framework */; };
 		5BF98E841C5674BB008D3EC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF98E831C5674BB008D3EC9 /* AppDelegate.swift */; };
-		5BF98E861C5674BB008D3EC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF98E851C5674BB008D3EC9 /* ViewController.swift */; };
+		5BF98E861C5674BB008D3EC9 /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF98E851C5674BB008D3EC9 /* WelcomeController.swift */; };
 		5BF98E891C5674BB008D3EC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BF98E871C5674BB008D3EC9 /* Main.storyboard */; };
 		5BF98E8B1C5674BB008D3EC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BF98E8A1C5674BB008D3EC9 /* Assets.xcassets */; };
 		5BF98E8E1C5674BC008D3EC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BF98E8C1C5674BC008D3EC9 /* LaunchScreen.storyboard */; };
 		5BFD637C1C56780F00A7B7B3 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD637B1C56780F00A7B7B3 /* CircleButton.swift */; };
 		5BFD637E1C567B0F00A7B7B3 /* FlatTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD637D1C567B0F00A7B7B3 /* FlatTextField.swift */; };
+		9F89F0121C56B707001BF469 /* SearchPeopleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89F0111C56B707001BF469 /* SearchPeopleController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +23,7 @@
 		463DF05FA0116D80A9A1AD10 /* Pods-iChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-iChat/Pods-iChat.release.xcconfig"; sourceTree = "<group>"; };
 		5BF98E801C5674BB008D3EC9 /* iChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF98E831C5674BB008D3EC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5BF98E851C5674BB008D3EC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5BF98E851C5674BB008D3EC9 /* WelcomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeController.swift; sourceTree = "<group>"; };
 		5BF98E881C5674BB008D3EC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5BF98E8A1C5674BB008D3EC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BF98E8D1C5674BC008D3EC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -30,6 +31,7 @@
 		5BFD637B1C56780F00A7B7B3 /* CircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		5BFD637D1C567B0F00A7B7B3 /* FlatTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlatTextField.swift; sourceTree = "<group>"; };
 		9EC1AD9D333AB43139749C1D /* Pods_iChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F89F0111C56B707001BF469 /* SearchPeopleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPeopleController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +76,9 @@
 			isa = PBXGroup;
 			children = (
 				5BF98E831C5674BB008D3EC9 /* AppDelegate.swift */,
-				5BF98E851C5674BB008D3EC9 /* ViewController.swift */,
+				5BF98E851C5674BB008D3EC9 /* WelcomeController.swift */,
 				5BF98E871C5674BB008D3EC9 /* Main.storyboard */,
+				9F89F0111C56B707001BF469 /* SearchPeopleController.swift */,
 				5BFD637F1C567F4800A7B7B3 /* Designable */,
 				5BF98E8A1C5674BB008D3EC9 /* Assets.xcassets */,
 				5BF98E8C1C5674BC008D3EC9 /* LaunchScreen.storyboard */,
@@ -225,9 +228,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BFD637C1C56780F00A7B7B3 /* CircleButton.swift in Sources */,
-				5BF98E861C5674BB008D3EC9 /* ViewController.swift in Sources */,
+				5BF98E861C5674BB008D3EC9 /* WelcomeController.swift in Sources */,
 				5BFD637E1C567B0F00A7B7B3 /* FlatTextField.swift in Sources */,
 				5BF98E841C5674BB008D3EC9 /* AppDelegate.swift in Sources */,
+				9F89F0121C56B707001BF469 /* SearchPeopleController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
